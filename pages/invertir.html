@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Kintos</title>
+    <link href="https://bootswatch.com/flatly/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="../dist/css/styles_invertir.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/5ba74422f5.js"></script>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">K I N T O S  .</a>
+            </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-money fa-fw"></i> Recordatorio de pago
+                                    <span class="pull-right text-muted small">Hace 4 minutos</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-bell fa-fw"></i> ¡Gracias por su pago!
+                                    <span class="pull-right text-muted small">Hace un día</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="index.html"><i class="fa fa-home fa-5x"></i> </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-line-chart  fa-5x"></i><span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="invertir.html">Invertir</a>
+                                </li>
+                                <li>
+                                    <a href="prestamo.html">Solicitar préstamo</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="movimientos.html"><i class="fa fa-calendar fa-5x"></i> </a>
+                        </li>
+                        <li>
+                            <a href="soporte.html"><i class="fa fa-briefcase fa-5x"></i> </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Invertir</h1>
+                </div>
+            </div>
+            <div class="container">
+              <div class="caja">
+                <form class="form-horizontal form-pricing" role="form">
+                  <div class="caja-slider">
+                    <h4 class="grande">Cantidad</h4>
+                    <span>El prestamo minimo es de 1000</span>
+                    <div class="col-sm-12">
+                     <div id="slider"></div>
+                    </div>
+                  </div>
+                  <div class="caja-slider">
+                    <h4 class="grande">Duración</h4>
+                    <span>El minimo es de 1 semana</span>
+                    <div class="col-sm-12">
+                      <div id="slider2"></div>
+                    </div>
+                  </div>
+
+                  <div class="precio-form">
+
+                    <div class="form-group">
+                      <label for="cantidad" class="col-sm-6 control-label">Cantidad ($): </label>
+                      <div class="col-sm-6">
+                        <input type="hidden" id="cantidad" class="form-control">
+                        <p class="precio lead" id="cantidad-label"></p>
+                        <span class="precio">.00</span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="duracion" class="col-sm-6 control-label">Duración: </label>
+                      <div class="col-sm-6">
+                        <input type="hidden" id="duracion" class="form-control">
+                        <p class="precio lead" id="duracion-label"></p>
+                        <span class="precio">Semanas</span>
+                      </div>
+                    </div>
+                    <hr class="style">
+                    <div class="form-group total">
+                      <label for="total" class="col-sm-6 control-label"><strong>Total Semanal: </strong></label>
+                      <div class="col-sm-6">
+                        <input type="hidden" id="total" class="form-control">
+                        <p class="precio lead" id="total-label"></p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <button type="submit" class="btn btn-primary btn-lg btn-block"> Solicitar <span class="glyphicon glyphicon-chevron-right pull-right" style="padding-right: 10px;"></span></button>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+
+            </div>
+
+    </div>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+    <script src="../vendor/raphael/raphael.min.js"></script>
+    <script src="../vendor/morrisjs/morris.min.js"></script>
+    <script src="../data/morris-data.js"></script>
+    <script src="../dist/js/sb-admin-2.js"></script>
+    <script src="../dist/js/actions_invertir.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+</body>
+</html>
