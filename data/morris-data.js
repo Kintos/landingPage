@@ -4,58 +4,58 @@ $(function() {
         element: 'morris-area-chart',
         data: [{
             period: '2010 Q1',
-            iphone: 2666,
-            ipad: null,
-            itouch: 2647
+            Inversiones: 2666,
+            Esperados: null,
+            Prestamos: 2647
         }, {
             period: '2010 Q2',
-            iphone: 2778,
-            ipad: 2294,
-            itouch: 2441
+            Inversiones: 2778,
+            Esperados: 2294,
+            Prestamos: 2441
         }, {
             period: '2010 Q3',
-            iphone: 4912,
-            ipad: 1969,
-            itouch: 2501
+            Inversiones: 4912,
+            Esperados: 1969,
+            Prestamos: 2501
         }, {
             period: '2010 Q4',
-            iphone: 3767,
-            ipad: 3597,
-            itouch: 5689
+            Inversiones: 3767,
+            Esperados: 3597,
+            Prestamos: 5689
         }, {
             period: '2011 Q1',
-            iphone: 6810,
-            ipad: 1914,
-            itouch: 2293
+            Inversiones: 6810,
+            Esperados: 1914,
+            Prestamos: 2293
         }, {
             period: '2011 Q2',
-            iphone: 5670,
-            ipad: 4293,
-            itouch: 1881
+            Inversiones: 5670,
+            Esperados: 4293,
+            Prestamos: 1881
         }, {
             period: '2011 Q3',
-            iphone: 4820,
-            ipad: 3795,
-            itouch: 1588
+            Inversiones: 4820,
+            Esperados: 3795,
+            Prestamos: 1588
         }, {
             period: '2011 Q4',
-            iphone: 15073,
-            ipad: 5967,
-            itouch: 5175
+            Inversiones: 15073,
+            Esperados: 5967,
+            Prestamos: 5175
         }, {
             period: '2012 Q1',
-            iphone: 10687,
-            ipad: 4460,
-            itouch: 2028
+            Inversiones: 10687,
+            Esperados: 4460,
+            Prestamos: 2028
         }, {
             period: '2012 Q2',
-            iphone: 8432,
-            ipad: 5713,
-            itouch: 1791
+            Inversiones: 8432,
+            Esperados: 5713,
+            Prestamos: 1791
         }],
         xkey: 'period',
-        ykeys: ['iphone', 'ipad', 'itouch'],
-        labels: ['iPhone', 'iPad', 'iPod Touch'],
+        ykeys: ['Inversiones', 'Esperados', 'Prestamos'],
+        labels: ['Inversiones', 'Esperados', 'Prestamos'],
         pointSize: 2,
         hideHover: 'auto',
         resize: true
@@ -113,5 +113,5 @@ $(function() {
         hideHover: 'auto',
         resize: true
     });
-    
+
 });

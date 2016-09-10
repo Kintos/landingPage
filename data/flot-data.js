@@ -49,7 +49,6 @@ $(document).ready(function() {
     }
 });
 
-//Flot Pie Chart
 $(function() {
 
     var data = [{
